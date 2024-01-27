@@ -38,17 +38,17 @@ st.title('Dashboard de Avaliações - Reclame Aqui')
 st.write('Análise das reclamações das empresas Hapvida, Nagem e Ibyte')
 
 lista_empresa=df['EMPRESA'].unique().tolist()
-empresa = st.sidebar.selectbox(
+empresa = st.selectbox(
     'Selecione a empresa',
     lista_empresa)
 
 lista_estado = df.loc[df['EMPRESA'] == empresa, 'ESTADO'].unique().tolist()
-estado = st.sidebar.selectbox(
+estado = st.selectbox(
     'Selecione o estado',
     lista_estado)
 
 lista_status = df.loc[(df['EMPRESA'] == empresa) & (df['ESTADO'] == estado), 'STATUS'].unique().tolist()
-status = st.sidebar.selectbox(
+status = st.selectbox(
     'Selecione o status',
     lista_status)
 
