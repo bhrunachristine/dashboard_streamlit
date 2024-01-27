@@ -33,7 +33,7 @@ df = df[(df['ESTADO'] != '--') & (df['ESTADO'] != 'naoconsta')]
 
 #Streamlit#
 
-st.title('Dashboard de Avaliações - Reclame Aqui)
+st.title('Dashboard de Avaliações - Reclame Aqui')
 
 st.write('Análise das reclamações das empresas Hapvida, Nagem e Ibyte')
 
