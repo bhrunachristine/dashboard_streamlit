@@ -33,9 +33,9 @@ df = df[(df['ESTADO'] != '--') & (df['ESTADO'] != 'naoconsta')]
 
 #Streamlit#
 
-st.title('Análise de Sentimento')
+st.title('Dashboard de Avaliações - Reclame Aqui)
 
-st.write('Análise das reclamações no RECLAME AQUI')
+st.write('Análise das reclamações das empresas Hapvida, Nagem e Ibyte')
 
 lista_empresa=df['EMPRESA'].unique().tolist()
 empresa = st.sidebar.selectbox(
